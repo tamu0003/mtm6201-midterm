@@ -10,14 +10,14 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
+        <header role="banner">
             <!-- navigation menue made by cheack box and unorder list -->
             <!-- logo img -->
             <div class="menue">
                 <input type="checkbox" id="input">
                 <label for="input"><div class="line"></div></label>
             </div>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -26,11 +26,11 @@
             </nav>
         </header>
         <!-- main content including 3 sections-->
-        <main>
+        <main role="navigation">
             <!-- contact form  -->
-            <section class="contactform">
+            <section class="contactform" role="search">
                 <h3>Contact Us</h3>
-                <form action="contact.html" method="post">
+                <form action="contact.html" method="post" role="form">
                     <label for="name">Name</label>
                     <input id="name" type="text" name="name">
 
@@ -43,10 +43,10 @@
                     <label for="message">Inquiry details</label>
                     <textarea id="message"></textarea>
 
-                    <button type="submit">Send</button>
+                    <button role="button" type="submit">Send</button>
                 </form>
             </section>
-            <section class="sns">
+            <section class="sns" role="complementary">
                 <h3>SNS</h3>
                 <div class="snsicons">
                     <i class="fa-brands fa-square-instagram"></i>
@@ -55,30 +55,30 @@
                 </div>
                 <p>Tap icons and follow us!!</p>
             </section>
-            <section class="shopinfo">
+            <section class="shopinfo" role="complementary">
                 <h3>Shop Information</h3>
                 <div class="shopmap">
                     <!-- adds img -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11216.001051133433!2d-75.77058491786505!3d45.348806961694336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718ab4c4e65%3A0x86fd3e15e3355caf!2sAlgonquin%20College%2C%20Building%20A!5e0!3m2!1sja!2sca!4v1688286763232!5m2!1sja!2sca"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <dl>
+                <dl itemscope itemtype="https://schema.org/Store" role="list">
                     <dt>Address</dt>
-                    <dd>1385 Woodroffe Ave, Nepean, ON K2G 1V8</dd>
+                    <dd itemprop="location">1385 Woodroffe Ave, Nepean, ON K2G 1V8</dd>
 
                     <dt>Phone</dt>
-                    <dd>+1(000)000-0000</dd>
+                    <dd itemprop="telephone">+1(000)000-0000</dd>
 
                     <dt>E-mail</dt>
-                    <dd>abcd12@amail.com</dd>
+                    <dd itemprop="email">abcd12@amail.com</dd>
 
                     <dt>Business<br>
                         Day/Time</dt>
-                    <dd>Mon-Fri<br>
+                    <dd itemprop="openingHours">Mon-Fri<br>
                         00:00~00:00</dd>
                 </dl>
             </section>
         </main>
-        <footer>
+        <footer role="contentinfo">
             <!-- adds logo -->
             <div class="icons">
                 <i class="fa-brands fa-square-instagram"></i>
