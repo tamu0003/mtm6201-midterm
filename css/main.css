@@ -1,19 +1,27 @@
-/* styling for the mobile version */
-/* General styling (screen size, font, line-height) */
+/* custom propaty */
+:root{
+    --main-bg: #f0eed1;
+    --section-bg: #d7b666;
+    --black: #272727;
+    --red: #ad4142;
+    --white: #ffffff;
+}
 
+
+/* General styling (screen size, font, line-height) */
 *{
     line-height: 1.3rem;
 }
 
 body{
-    background-color: #f0eed1; 
+    background-color: var(--main-bg); 
     display: block;
 }
 
 .wrapper{
-    max-width: 1000px;
+    max-width: 960px;
     margin: 0 auto;
-    background-color: #f0eed1;
+    background-color: var(--main-bg);
 }
 
 h1{
@@ -30,9 +38,9 @@ p{
 }
 
 
-/* header styling with flexbox and using animation to design humburger menue */
+/* header styling with flexbox > 100% width */
 .header{
-    background-color: #272727;
+    background-color: var(--black);
     display: flex;
     align-items: center;
     width: 100%;
@@ -49,6 +57,7 @@ ul{
 }
 .nav ul li{
     margin-right: 20px;
+    text-decoration: none;
 }
 .logo{
     margin-left: 20px;
