@@ -6,26 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/76e588cc94.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,200;1,500&display=swap" rel="stylesheet">
+    
     <title>midterm-home</title>
 </head>
 <body>
     <div class="wrapper">
-        <header role="banner">
+        <header class="header" role="banner">
             <div class="logo">
                 <img
                     srcset="images/logo-s.jpg 480w,
                             images/logo-b.jpg 960w"
-                    sizes="(max-width: 500px) 100px,
-                            200px"      
+                    sizes="(max-width: 500px) 55px,
+                            60px"     
                     src="images/logo-s.jpg"
                     alt="logo">
             </div>
-<!-- navigation menue made by cheack box and unorder list -->
-            <div class="menue">
-                <input type="checkbox" id="input">
-                <label for="input"><div class="line"></div></label>
-            </div>
-            <nav role="navigation">
+            <!-- navigation menue styling with flex -->
+            <nav class="nav" role="navigation">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
