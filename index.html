@@ -37,7 +37,16 @@
         <main role="main">
 <!-- introduction content and ad video -->
             <section class="intro" role="complementary">
-                <!-- adds main img -->
+                <!-- add main img using with img tag -->
+                <div class="mainimage">
+                    <img
+                        srcset="images/mains.png 480w,
+                                images/mainb.png 960w"
+                        sizes="(max-width: 500px) 300px,
+                                750px"  
+                        src="images/mains.png" 
+                        alt="main image">
+                </div>
                 <h1>Pang9</h1>
                 <p>We are Pang9!!<br>
                 Pang 9 designs and modifies camper van and RV. Our services are primally to design each customer's ideal car. We collaborate with car companies and create the one and only car in the world. </p>
@@ -45,7 +54,16 @@
                     <a href="contact.html">Contact Us</a>
                 </div>
                 <div class="advideo">
-                    <!-- video img -->
+                    <!-- add video img using with img tag -->
+                    <div class="videoimage">
+                        <img
+                            srcset="images/videos.png 480w,
+                                    images/videob.png 960w"
+                            sizes="(max-width: 500px) 200px,
+                                    550px"  
+                            src="images/videos.png" 
+                            alt="video image">
+                    </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non tempora est voluptas at ullam, pariatur amet mollitia. Omnis adipisci reprehenderit totam rerum!</p>
                 </div>
             </section>
@@ -69,13 +87,68 @@
 <!-- Gallery section styled with grid > style change according to screen size -->
             <section class="gallery" role="complementary">
                 <h3>Gallery</h3>
-                <!-- adds 6 imgs -->
+                <!-- adds 6 imgs using img tag-->
+                <div class="galleryimages">
+                    <img class="g-a"
+                        srcset="images/gallery-as.png 480w,
+                                images/gallery-ab.png 960w"
+                        sizes="(max-width: 500px) 100px,
+                                350px"  
+                        src="images/gallery-as.png" 
+                        alt="gallery image">
+
+                        <img class="g-b"
+                        srcset="images/gallery-bs.png 480w,
+                                images/gallery-bb.png 960w"
+                        sizes="(max-width: 500px) 100px,
+                                350px"  
+                        src="images/gallery-bs.png" 
+                        alt="gallery image">
+
+                        <img class="g-c"
+                        srcset="images/gallery-cs.png 480w,
+                                images/gallery-cb.png 960w"
+                        sizes="(max-width: 500px) 100px,
+                                350px"  
+                        src="images/gallery-cs.png" 
+                        alt="gallery image">
+
+                        <img class="g-d"
+                        srcset="images/gallery-ds.png 480w,
+                                images/gallery-db.png 960w"
+                        sizes="(max-width: 500px) 100px,
+                                350px"  
+                        src="images/gallery-ds.png" 
+                        alt="gallery image">
+
+                        <img class="g-e"
+                        srcset="images/gallery-es.png 480w,
+                                images/gallery-eb.png 960w"
+                        sizes="(max-width: 500px) 100px,
+                                350px"  
+                        src="images/gallery-es.png" 
+                        alt="gallery image">
+
+                        <img class="g-f"
+                        srcset="images/gallery-fs.png 480w,
+                                images/gallery-fb.png 960w"
+                        sizes="(max-width: 500px) 100px,
+                                350px"  
+                        src="images/gallery-fs.png" 
+                        alt="gallery image">
+                </div>
                 <button role="button">View More</button>
             </section>
         </main>
         <footer role="contentinfo">
             <div class="logo">
-                <img src="images/logo.jpg" alt="logo">
+                <img
+                    srcset="images/logo-s.jpg 480w,
+                            images/logo-b.jpg 960w"
+                    sizes="(max-width: 500px) 100px,
+                            200px"      
+                    src="images/logo-s.jpg"
+                    alt="logo">
             </div>
             <div class="icons">
                 <i class="fa-brands fa-square-instagram"></i>
