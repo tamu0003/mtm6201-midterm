@@ -7,38 +7,49 @@
 
 body{
     background-color: #f0eed1; 
+    display: block;
 }
 
 .wrapper{
     max-width: 1000px;
-    padding: 0 40px;
     margin: 0 auto;
     background-color: #f0eed1;
 }
 
 h1{
     font-family: 'League Spartan', sans-serif;
-    font-size: 4.0rem;
+    font-size: 2.5rem;
 }
 h3{
     font-family: 'League Spartan', sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 p{
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
 /* header styling with flexbox and using animation to design humburger menue */
 .header{
     background-color: #272727;
-    margin-bottom: 30px;
     display: flex;
+    align-items: center;
     width: 100%;
-    height: 60px;
+    height: 80px;
+}
+.nav{
+    margin-left: auto;
+}
+ul{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    margin-left: auto;
+    display: flex;
 }
 .nav ul li{
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
+    margin-right: 20px;
+}
+.logo{
+    margin-left: 20px;
 }
