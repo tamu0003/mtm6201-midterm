@@ -1,10 +1,14 @@
 /* custom propaty */
 :root{
+    /* colors */
     --main-bg: #f0eed1;
     --section-bg: #d7b666;
     --black: #272727;
     --red: #ad4142;
     --white: #ffffff;
+    /* fonts */
+    --head: 'League Spartan', sans-serif;
+    --para: 'Poppins', sans-serif;
 }
 
 
@@ -25,15 +29,15 @@ body{
 }
 
 h1{
-    font-family: 'League Spartan', sans-serif;
+    font-family: var(--head);
     font-size: 2.5rem;
 }
 h3{
-    font-family: 'League Spartan', sans-serif;
+    font-family: var(--head);
     font-size: 1.5rem;
 }
 p{
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--para);
     font-size: 14px;
 }
 
@@ -59,6 +63,33 @@ ul{
     margin-right: 20px;
     text-decoration: none;
 }
+.h-logo{
+    margin-left: 20px;
+}
+
+/* footer styling with flexbox > 100% width */
+footer{
+    background-color: var(--black);
+    width: 100%;
+    height: 150px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
 .logo{
     margin-left: 20px;
+    margin-top: 20px;
+}
+.icons{
+    margin-left: auto;
+    margin-right: 20px;
+    color: var(--white);
+    font-size: 40px;
+}
+.copyright{
+    color: var(--white);
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
