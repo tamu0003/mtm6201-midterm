@@ -63,7 +63,12 @@ ul{
 .nav ul li a{
     margin-right: 20px;
     text-decoration: none;
+    color: var(--section-bg);
 }
+    /* animation for navigations */
+/* .nav ul li a:hover{
+    color: #ad4142;
+} */
 .h-logo{
     margin-left: 20px;
 }
@@ -96,7 +101,7 @@ footer{
 }
 
 /* HOME Page styling > width 80% */
-/* intro section > img */
+    /* intro section */
 .mainimage img{
     width: 80%;
 }
@@ -104,6 +109,9 @@ footer{
     text-align: center;
 }
 .intro-comment{
+    background-image: url(/images/rectangle.png);
+    background-size: cover;
+    background-position: 50% 50%;
     width: 80%;
     margin: auto;
     text-align: center;
@@ -118,4 +126,72 @@ h1 {
 .contact a{
     font-family: var(--para);
     text-decoration: none;
+    color: var(--black);
+    border-bottom: solid 2px var(--red);
+}
+.contact i{
+    color: var(--red);
+}
+    /* ad-video section */
+.advideo{
+    margin-top: 50px;
+}
+.videoimage {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 80%;
+    margin: 0 auto 10px auto;
+    background-color: var(--red);
+    filter: opacity(70%);
+    position: relative;
+}
+.videoimage:hover{
+    filter: none;
+}
+.videoimage i{
+    font-size: 60px;
+    color: #cd2326;
+    position: absolute;
+    left: 45%;
+    top: 38%;
+}
+        /* animation for the video play button */
+.advideo p{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+/* service announcement section styling with flexbox > width 80% */
+.announce{
+    background-color: var(--section-bg);
+    box-shadow: 8px 8px;
+    width: 80%;
+    margin: 50px auto auto auto;
+}
+.announce h3{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+}
+.saa p, .sab p{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+}
+.sadate{
+    text-align: right;
+    padding-right: 30px;
+}
+.sadate p{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+.flexforbutton{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 30px;
 }
