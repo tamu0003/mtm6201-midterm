@@ -104,15 +104,16 @@ footer{
     text-align: center;
 }
 .intro-comment{
-    background-color: var(--section-bg);
     width: 80%;
     margin: auto;
-}
-.intro .intro-comment{
     text-align: center;
 }
 h1 {
     padding-top: 20px;
+}
+.intro-comment p{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .contact a{
     font-family: var(--para);
