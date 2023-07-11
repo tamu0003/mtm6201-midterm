@@ -291,4 +291,88 @@ blockquote{
     padding-right: 30px;
 }
 
-/*  */
+/* Contact Page */
+/* contact form section > styling with grid */
+.contactform{
+    width: 80%;
+    margin: auto;
+}
+.contactform h1{
+    text-align: center;
+}
+form{
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+}
+form label{
+    font-family: var(--para);
+    font-size: 0.8rem;
+}
+label, input{
+    margin: 10px;
+}
+form label::after{
+    content: "*";
+    color: var(--red);
+}
+/* sns section adds bg color */
+.sns{
+    background-color: var(--black);
+}
+.white{
+    text-align: center;
+    color: var(--white);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+    /* ions layout > styling with grid */
+.snsicons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.snsicons i{
+    color: var(--white);
+    font-size: 60px;
+    margin: 0px 30px 0px 30px;
+}
+.snsicons i:hover{
+    color: var(--section-bg);
+}
+.snsicons i:active{
+    transition: 0.1s;
+    transform: scale(0.9);
+}
+/* shop information section > width 80% */
+.shopinfo{
+    width: 80%;
+    margin: 80px auto auto auto
+}
+.shopinfo h3{
+    text-align: center;
+}
+.shopinfo-flex{
+    display: flex;
+    flex-direction: column;
+}
+.shop iframe{
+    width: 90%;
+    margin: auto;
+}
+iframe{
+    height: 230px;
+    margin-top: 40px;
+}
+dl{
+    width: 80%;
+    display: grid;
+    grid-template-columns:  0.6fr 1.4fr;
+    margin: 30px auto;
+}
+dt, dd{
+    font-family: var(--para);
+    padding-bottom: 15px;
+}
+dt{
+    margin-left: auto;
+}

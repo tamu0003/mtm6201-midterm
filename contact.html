@@ -38,7 +38,7 @@
             </nav>
         </header>
  <!-- main content including 3 sections-->
-        <main role="navigation">
+        <main role="main">
             <!-- contact form  styling with flexbox-->
             <section class="contactform" role="search">
                 <h1>Contact Us</h1>
@@ -54,36 +54,38 @@
 
                     <label for="message">Inquiry details</label>
                     <textarea id="message"></textarea>
-
-                    <button role="button" type="submit">Send</button>
                 </form>
+                <div class="flexforbutton">
+                    <button role="button" type="submit">Send</button>
+                </div>
             </section>
             <section class="sns" role="complementary">
-                <h3>SNS</h3>
+                <h3 class="white">SNS</h3>
                 <div class="snsicons">
                     <i class="fa-brands fa-square-instagram"></i>
                     <i class="fa-brands fa-square-facebook"></i>
                     <i class="fa-brands fa-square-twitter"></i>
                 </div>
-                <p>Tap icons and follow us!!</p>
+                <p class="white">Tap icons and follow us!!</p>
             </section>
 <!-- shop info section > style change according to screen size -->
             <section class="shopinfo" role="complementary">
                 <h3>Shop Information</h3>
-                <div class="shopmap">
-                    <!-- adds shop img using with img tag -->
-                    <img class="shop"
-                        srcset="images/shops.png 480w,
-                                images/shopb.png 960w"
-                        sizes="(max-width: 500px) 100px,
-                                350px"  
-                        src="images/shops.png" 
-                        alt="shop image">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11216.001051133433!2d-75.77058491786505!3d45.348806961694336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718ab4c4e65%3A0x86fd3e15e3355caf!2sAlgonquin%20College%2C%20Building%20A!5e0!3m2!1sja!2sca!4v1688286763232!5m2!1sja!2sca"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                    <div class="shopinfo-flex">
+                        <!-- adds shop img using with img tag -->
+                        <img class="shop"
+                            srcset="images/shops.png 480w,
+                                    images/shopb.png 960w"
+                            sizes="(max-width: 500px) 200px,
+                                    350px"  
+                            src="images/shops.png" 
+                            alt="shop image">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11216.001051133433!2d-75.77058491786505!3d45.348806961694336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718ab4c4e65%3A0x86fd3e15e3355caf!2sAlgonquin%20College%2C%20Building%20A!5e0!3m2!1sja!2sca!4v1688286763232!5m2!1sja!2sca"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                 <dl itemscope itemtype="https://schema.org/Store" role="list">
-                    <dt>Address</dt>
-                    <dd itemprop="location">1385 Woodroffe Ave, Nepean, ON K2G 1V8</dd>
+                     <dt>Address</dt>
+                    <dd itemprop="location">1385 Woodroffe Ave, Nepean, ON K2G 1V8</dd>       
 
                     <dt>Phone</dt>
                     <dd itemprop="telephone">+1(000)000-0000</dd>
@@ -95,7 +97,7 @@
                         Day/Time</dt>
                     <dd itemprop="openingHours">Mon-Fri<br>
                         00:00~00:00</dd>
-                </dl>
+                </dl>        
             </section>
         </main>
         <footer role="contentinfo">
