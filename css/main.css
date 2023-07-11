@@ -251,3 +251,44 @@ h1 {
 .gallery button{
     margin: 20%
 }
+
+/* About Us page styling > width 80% */
+.background{
+    width: 80%;
+    margin: auto auto 90px auto;
+    text-align: center;
+}
+blockquote{
+    font-family: var(--para);
+    padding-top: 15%;
+}
+.mission-img, .vision-img{
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+    /* mission statement section > adds bg-color */
+.mission{
+    background-color: var(--section-bg);
+    box-shadow: 8px 8px;
+    width: 99%;
+    margin: auto;
+}
+.mission h3{
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.flex-about{
+    display: flex;
+    flex-direction: row;
+}
+    /* vision statement section */
+.vision h3{
+    margin-top: 60px;
+    text-align: right;
+    padding-right: 30px;
+}
+.vision-img{
+    padding-right: 30px;
+}
+
+/*  */
